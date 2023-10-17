@@ -22,7 +22,7 @@ body, html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to left, red, yellow) no-repeat center center fixed; /* Set the background gradient */
+  background: linear-gradient(to left, red, yellow) no-repeat center center fixed; 
   background-size: cover; 
 }
 
@@ -54,6 +54,9 @@ ul li {
 }
 
 .suggestions ul {
+  max-height: 200px; 
+  overflow-y: auto;
+  scrollbar-width: thin;
   margin: 0;
   padding: 0;
   border: 0;
@@ -75,6 +78,6 @@ select {
   display: none;
   width: 0px;
   height: 0px;
-  background: linear-gradient(to right, red, yellow); /* Gradient from red to yellow */
+  background: linear-gradient(to right, red, yellow); 
   color: white;
 }
